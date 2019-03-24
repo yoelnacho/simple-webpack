@@ -1,3 +1,3 @@
-import { bro } from "./bro";
+import { hello } from "./hello";
 
-console.log(bro('Dude'))
+console.log(hello('Nachito'))
