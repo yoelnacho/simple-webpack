@@ -4,6 +4,16 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   module: {
     rules: [
+      {
+        // A cualquier .js
+        test: /\.js$/,
+        // escluye la carpeta node_modules
+        exclude: /node_modules/,
+        use: {
+          // usa el loader de babel
+          loader: "babel-loader"
+        }
+      },
       { 
         // Definir la regla para los archivos .html
         test: /\.html$/,
